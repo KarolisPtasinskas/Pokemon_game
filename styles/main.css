@@ -1,0 +1,14 @@
+#winner_row {
+    margin: 25px 0;
+    font-family: 'Reggae One', cursive;
+    text-align: center;
+}
+
+
+.card-body > a {
+    width: 100%;
+}
+
+.action_btn {
+    width: 250px;
+}

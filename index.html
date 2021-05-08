@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- Google font Reggae One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container mt-5 border rounded shadow-lg">
+        <div class="row" id="winner_row">
+            <h1>Winner - Bulbazauras!</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Empty card slot</h5>
+                        <p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 1</b>.</p>
+                        <a href="#" class="btn btn-light border">Generate Pokemon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex align-items-center">
+                <img class="img-fluid mx-auto d-block" src="./img/vs.webp" alt="versus">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Empty card slot</h5>
+                        <p class="card-text"><b>Accuracy:</b> 135<br><b>Power:</b> 100<b><br>Experience:</b> 178</p>
+                        <a href="#" class="btn btn-light border">Generate Pokemon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <button type="button" class="btn btn-warning mt-4 action_btn">FIGHT</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md  d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary my-4 action_btn">Remove cards</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
