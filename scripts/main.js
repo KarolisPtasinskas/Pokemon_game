@@ -88,13 +88,13 @@ function pokemonFight(p1rndNumber, p2rndNumber) {
 }
 
 
-function randomPokemon(rndNumber) {
-  fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=2000")
-    .then((data) => data.json())
-    .then((data) => {
-      console.log(data["results"][rndNumber]);
-    });
-}
+// function randomPokemon(rndNumber) {
+//   fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=2000")
+//     .then((data) => data.json())
+//     .then((data) => {
+//       console.log(data["results"][rndNumber]);
+//     });
+// }
 
 function p1PickCard() {
   if (player1Card) {
@@ -135,7 +135,7 @@ function reset() {
         <span id="stats-player-1"><p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 1</b>.</p></span>
         <a href="#" class="btn btn-light border" id="generate-pokemon" onclick="p1PickCard();return false;">Generate Pokemon</a>
     </div>`;
-    document.getElementById('p1-card').classList.remove("border-danger");
+    document.getElementById('p2-card').classList.remove("border-danger");
     document.getElementById('p2-card').innerHTML = `<span  id="img-player-2"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
     <div class="card-body">
         <span id="name-player-2"><h5 class="card-title">Empty card slot</h5></span>
