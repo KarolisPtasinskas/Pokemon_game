@@ -128,6 +128,9 @@ function fight() {
 }
 
 function reset() {
+    if (!player1Card && !player2Card) {
+        return;
+    }
     document.getElementById('p1-card').classList.remove("border-danger");
     document.getElementById('p1-card').innerHTML = `<span  id="img-player-1"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
     <div class="card-body">
