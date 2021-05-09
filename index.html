@@ -20,17 +20,17 @@
     <!-- Top row to show who is WINNER  -->
     <div class="container mt-5 border rounded shadow-lg">
         <div class="row" id="winner_row">
-            <h1>Winner - Bulbazauras!</h1>
+            <h1>Let's FIGHT!</h1>
         </div>
         <!-- Players cards field -->
         <div class="row">
             <div class="col-md-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name">
+                <div class="card" id="p1-card" style="width: 18rem;">
+                    <span  id="img-player-1"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
                     <div class="card-body">
-                        <h5 class="card-title">Empty card slot</h5>
-                        <p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 1</b>.</p>
-                        <a href="#" class="btn btn-light border">Generate Pokemon</a>
+                        <span id="name-player-1"><h5 class="card-title">Empty card slot</h5></span>
+                        <span id="stats-player-1"><p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 1</b>.</p></span>
+                        <a href="#" class="btn btn-light border" id="generate-pokemon" onclick="p1PickCard();return false;">Generate Pokemon</a>
                     </div>
                 </div>
             </div>
@@ -38,12 +38,12 @@
                 <img class="img-fluid mx-auto d-block" src="./img/vs.webp" alt="versus">
             </div>
             <div class="col-md-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name">
+                <div class="card" id="p2-card" style="width: 18rem;">
+                    <span  id="img-player-2"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
                     <div class="card-body">
-                        <h5 class="card-title">Empty card slot</h5>
-                        <p class="card-text"><b>Accuracy:</b> 135<br><b>Power:</b> 100<b><br>Experience:</b> 178</p>
-                        <a href="#" class="btn btn-light border">Generate Pokemon</a>
+                        <span id="name-player-2"><h5 class="card-title">Empty card slot</h5></span>
+                        <span id="stats-player-2"><p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 2</b>.</p></span>
+                        <a href="#" class="btn btn-light border" onclick="p2PickCard();return false;">Generate Pokemon</a>
                     </div>
                 </div>
             </div>
@@ -51,12 +51,12 @@
         <!-- Bottom buttons to FIGHT and RESET game -->
         <div class="row">
             <div class="col-md d-flex justify-content-center">
-                <button type="button" class="btn btn-warning mt-4 action_btn">FIGHT</button>
+                <button type="button" onclick="fight();" class="btn btn-warning mt-4 action_btn">FIGHT</button>
             </div>
         </div>
         <div class="row">
             <div class="col-md  d-flex justify-content-center">
-                <button type="button" class="btn btn-secondary my-4 action_btn">Remove cards</button>
+                <button type="button" onclick="reset();" class="btn btn-secondary my-4 action_btn">Reset</button>
             </div>
         </div>
     </div>
@@ -65,6 +65,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
+        <script src="./scripts/main.js"></script>
 </body>
 
 </html>
