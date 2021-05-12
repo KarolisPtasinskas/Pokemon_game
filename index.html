@@ -19,18 +19,30 @@
 <body>
     <!-- Top row to show who is WINNER  -->
     <div class="container mt-5 border rounded shadow-lg">
-        <div class="row" id="winner_row">
-            <h1>Let's FIGHT!</h1>
+        <div class="row">
+            <h1 id="winner_row">Who wins?</h1>
         </div>
         <!-- Players cards field -->
         <div class="row">
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card" id="p1-card" style="width: 18rem;">
-                    <span  id="img-player-1"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
+                    <span id="p-1-img"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
                     <div class="card-body">
-                        <span id="name-player-1"><h5 class="card-title">Empty card slot</h5></span>
-                        <span id="stats-player-1"><p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 1</b>.</p></span>
-                        <a href="#" class="btn btn-light border" id="generate-pokemon" onclick="p1PickCard();return false;">Generate Pokemon</a>
+                        <h5 id="p-1-name">Name</h5>
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="card-text"><b>Experience: </b>
+                                <p class="card-text"><b>Height: </b></p>
+                                <p class="card-text"><b>Weight: </b></p>
+                            </div>
+                            <div class="col-7">
+                                <p class="card-text" id="p-1-exp">--</p>
+                                <p class="card-text" id="p-1-height">--</p>
+                                <p class="card-text" id="p-1-weight">--</p>
+                            </div>
+                        </div>
+                        <a href="" class="check btn btn-light border" id="1" onclick="return false;">Generate
+                            Pokemon</a>
                     </div>
                 </div>
             </div>
@@ -39,11 +51,23 @@
             </div>
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card" id="p2-card" style="width: 18rem;">
-                    <span  id="img-player-2"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
+                    <span id="p-2-img"><img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name"></span>
                     <div class="card-body">
-                        <span id="name-player-2"><h5 class="card-title">Empty card slot</h5></span>
-                        <span id="stats-player-2"><p class="card-text">Press "Generate Pokemon", to randomly choose pokemon card for <b>Player 2</b>.</p></span>
-                        <a href="#" class="btn btn-light border" onclick="p2PickCard();return false;">Generate Pokemon</a>
+                        <h5 id="p-2-name">Name</h5>
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="card-text"><b>Experience: </b>
+                                <p class="card-text"><b>Height: </b></p>
+                                <p class="card-text"><b>Weight: </b></p>
+                            </div>
+                            <div class="col-7">
+                                <p class="card-text" id="p-2-exp">--</p>
+                                <p class="card-text" id="p-2-height">--</p>
+                                <p class="card-text" id="p-2-weight">--</p>
+                            </div>
+                        </div>
+                        <a href="" class="check btn btn-light border" id="2" onclick="return false;">Generate
+                            Pokemon</a>
                     </div>
                 </div>
             </div>
@@ -51,12 +75,14 @@
         <!-- Bottom buttons to FIGHT and RESET game -->
         <div class="row">
             <div class="col-md d-flex justify-content-center">
-                <button type="button" onclick="fight();return false;" class="btn btn-warning mt-4 action_btn">FIGHT</button>
+                <button type="button" onclick="fight();return false;"
+                    class="btn btn-warning mt-4 action_btn">FIGHT</button>
             </div>
         </div>
         <div class="row">
             <div class="col-md  d-flex justify-content-center">
-                <button type="button" onclick="reset();return false;" class="btn btn-secondary my-4 action_btn">Reset</button>
+                <button type="button" onclick="resetGame();return false;"
+                    class="btn btn-secondary my-4 action_btn">Reset</button>
             </div>
         </div>
     </div>
@@ -65,7 +91,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
-        <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
+
+<!-- Dėsim lentelę prieš žaidimą (su galimybe nebematyti) -->
+<!-- <p class="card-text" id="p-1-stats">Press "Generate Pokemon", to randomly choose pokemon card
+    for <b>Player 1</b>.</p> -->
