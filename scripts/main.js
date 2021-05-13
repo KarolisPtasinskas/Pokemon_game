@@ -75,8 +75,10 @@ function fight() {
     document.getElementById("winner_row").textContent = `DRAW`;
   } else if(p1Power > p2Power) {
     document.getElementById("winner_row").textContent = `Winner is ${document.getElementById(`p-1-name`).textContent}`;
+    document.getElementById('p1-card').classList.add(`bg-success`, `text-white`);
   } else {
     document.getElementById("winner_row").textContent = `Winner is ${document.getElementById(`p-2-name`).textContent}`;
+    document.getElementById('p2-card').classList.add(`bg-success`, `text-white`);
   }
 }
 
@@ -87,6 +89,7 @@ function resetGame(){
   document.getElementById("winner_row").textContent = `Who wins?`;
 
   //Player 1 card
+  document.getElementById('p1-card').classList.remove(`bg-success`, `text-white`);
   document.getElementById(`p-1-img`).innerHTML = `<img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name">`;
   document.getElementById(`p-1-name`).textContent = 'Name';
   document.getElementById(`p-1-exp`).textContent = '--';
@@ -94,6 +97,7 @@ function resetGame(){
   document.getElementById(`p-1-weight`).textContent = '--';
   
   //Player 2 card
+  document.getElementById('p2-card').classList.remove(`bg-success`, `text-white`);
   document.getElementById(`p-2-img`).innerHTML = `<img src="./img/no_img.png" class="card-img-top" alt="Pokemon Name">`;
   document.getElementById(`p-2-name`).textContent = 'Name';
   document.getElementById(`p-2-exp`).textContent = '--';
