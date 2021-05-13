@@ -52,7 +52,7 @@ function fight() {
   let p1PokemonName = document.getElementById(`p-1-name`).textContent;
   let p2PokemonName = document.getElementById(`p-2-name`).textContent;
 
-  if ((p1PokemonName || p2PokemonName) == 'Name') {
+  if (p1PokemonName == 'Name' || p2PokemonName == 'Name') {
     return;
   }
 
